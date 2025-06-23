@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Create Task{% endblock %}
+
+{% block content %}
+<h2>Create Task</h2>
+
+<form action="{{url_for('people.create')}}" method="post">
+    <input type="text" name="name" id="" placeholder="Name" required>
+    <input type="number" name="age" id="" placeholder="Age">
+    <input type="text" name="job" placeholder="job">
+    <input type="submit" value="Create">
+</form>
+
+{% endblock %}
